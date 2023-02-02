@@ -29,6 +29,10 @@ Server's resopnse will be a token. You can save it in a variable:
 ```
 export TKN="YOUR TOKEN HERE"
 ```
+## Show user
+```
+curl -X GET http://localhost:4001/user/name -H "Content-Type: application/json" -H "Authorization: Bearer $TKN"
+```
 ## Refresh
 ```
 curl -X POST http://localhost:4001/auth/refresh -H "Content-Type: application/json" -H "Authorization: Bearer $TKN"
