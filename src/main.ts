@@ -13,7 +13,7 @@ async function server() {
 
   await app.listen(port, () => {
     console.log(`Server works on address http://localhost:${port}`);
-  });
+  })
 }
 
-server();
+server()

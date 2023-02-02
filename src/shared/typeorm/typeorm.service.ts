@@ -19,7 +19,7 @@ export class TypeOrmConfigService implements TypeOrmOptionsFactory {
       migrations: ['dist/migrations/*.{ts,js}'],
       migrationsTableName: 'typeorm_migrations',
       logger: 'file',
-      synchronize: false, // not for prosuction
-    };
+      synchronize: false, // not for production
+    }
   }
 }
