@@ -1,7 +1,8 @@
 # compiled output
 /dist
 /node_modules
-
+/home/sambewe/Documents/javascripts/nest-auth-api/src/common/envs/development.env
+*.env
 # Logs
 logs
 *.log
