@@ -14,13 +14,14 @@ export class AuthService {
   private readonly helper: AuthHelper;
 
   public async register(body: RegisterDto): Promise<User | never> {
-    const { name, email, password }: RegisterDto = body;
+    const { firstName, lastName, email, password }: RegisterDto = body;
     let user: User = await this.repository.findOne({ where: { email } });
 
     if (user) { throw new HttpException('Conflict', HttpStatus.CONFLICT) }
 
     user = new User();
-    user.name = name;
+    user.firstName = firstName;
+    user.lastName = lastName;
     user.email = email;
     user.password = this.helper.encodePassword(password);
 
