@@ -12,7 +12,7 @@ async function server() {
   app.useGlobalPipes(new ValidationPipe({ whitelist: true, transform: true }));
 
   await app.listen(port, () => {
-    console.log(`Server works on address http://localhost:${port}`);
+    console.log(`Server works on port ${port}`);
   })
 }
 
