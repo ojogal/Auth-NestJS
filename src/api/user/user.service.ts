@@ -17,9 +17,4 @@ export class UserService {
 
     return this.repository.save(user)
   };
-
-  // public async showUser(body: UserDto, req: Request): Promise<User> {
-    // const user: User = <User>req.user;
-    // return this.repository.findOne(user.id);
-  // }
 }
